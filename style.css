@@ -58,19 +58,38 @@ body {
     position: relative;
 }
 
+.slider-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    top: 0;
+    right: 0;
+}
+
+.slider-img {
+    position: relative;
+    width: 600px;
+    height: inherit;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
 .circle {
     position: absolute;
     width: 430px;
     height: 430px;
     top: 15%;
-    right: 23%;
+    right: 5%;
     border-radius: 50%;
     opacity: 0.2;
     border: 1px solid #23242C;
     box-sizing: border-box;
 }
 
-.circle::after {
+.circle::before {
     position: absolute;
     width: 430px;
     height: 430px;
@@ -94,27 +113,18 @@ body {
     border: none;
 }
 
-.slider-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    height: 500px;
-    top: 0;
-    right: 0;
-}
-
 .slider-img-item {
     position: absolute;
-    top: 10%;
-    right: 20%;
-    z-index: 2;
+    top: 11%;
+    right: 10%;
+    z-index: 3;
 }
 
 .slider-img-seconditem {
     position: absolute;
-    top: 30%;
-    right: 12%;
+    top: 25%;
+    right: -9%;
+    z-index: 2;
 }
 
 .slider-img-item > img, .slider-img-seconditem > img {
@@ -122,7 +132,7 @@ body {
 }
 
 .title {
-    font-family: "Playfair Display" serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 75px;
@@ -133,7 +143,7 @@ body {
 }
 
 .title-desc {
-    font-family: "Poppins" sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     color: #967675 
@@ -141,14 +151,17 @@ body {
 
  button {
     margin-top: 30px;
-    font-family: "Poppins" sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     color: #967675;
     border: 1px solid #CFADAC;
     border-radius: 6px;
     width: 185px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
+    background: #fff;
+    height: 60px;
+    box-shadow: 0px 3px 10px rgba(150, 79, 76, 0.32); 
 }
 
 
@@ -162,11 +175,19 @@ body {
 
 
 .brand-item h3 {
-    font-family: "Playfair Display" serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 38px;
     color: #111111;
+}
+
+.brand-item h3::before {
+    content: url(img/Decoration.png);
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -25px;
+
 }
 
 .brand-wrapper {
@@ -242,7 +263,7 @@ body {
 }
 
 .range-item h3 {
-    font-family: "Playfair Display" serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: normal;
     font-size: 48px;
@@ -309,9 +330,9 @@ body {
 }
 .quiote-back-title  > span {
     position: absolute;
-    margin-top: -96px;
+    margin-top: -115px;
     content: "More";
-    font-family: "Playfair Display" serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: bold;
     width: 100%;
@@ -325,7 +346,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 900px;
+    max-width: 1000px;
     height: 700px;
     position: relative;
     margin: 0 auto;
@@ -366,7 +387,7 @@ body {
 }
 
 .quiote-circle > h3 {
-    font-family: "Playfair Display" sans-serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -400,7 +421,7 @@ body {
     border-bottom: 1px solid rgba(150, 118, 117, 0.5);
     padding-bottom: 10px;
     padding-left: 10px;
-    font-family: "Poppins" serif;
+    font-family: 'Poppins', serif;
     font-weight: 300;
     font-size: 28px;
     line-height: 42px;
@@ -420,10 +441,11 @@ body {
     box-sizing: border-box;
     border-radius: 6px;
     margin-left: 25px;
-    font-family: "Poppins" serif;
+    font-family: 'Poppins', serif;
     line-height: 24px;
     color: #967675;
     cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(150, 79, 76, 0.32); 
 }
 
 
@@ -445,14 +467,14 @@ body {
 
 .footer-info > p {
     margin-top: 20px;
-    font-family:"Poppins" serif;
+    font-family:'Poppins', serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
 }
 
 .footer-info > p:last-child {
-    font-family: "Poppins" serif;
+    font-family:'Poppins', serif;
     font-size: 16px;
     color: #FFFFFF;
     opacity: 0.5;
