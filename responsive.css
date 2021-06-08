@@ -185,6 +185,11 @@
         height: 300px;
     }
 
+    .brand-item > p {
+        padding-left: 0;
+        text-align: center;
+    }
+
 }
 
 

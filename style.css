@@ -264,7 +264,7 @@ body {
 .range-item {
     background-color: #F6ECE8;
     max-height: 630px;
-    flex: 0 1 350px;
+    flex: 1 1 300px;
 }
 
 .range-item:last-child {
