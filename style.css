@@ -245,6 +245,10 @@ body {
 
 /* range */
 
+#range {
+    margin-bottom: 50px;
+}
+
 #range > .container > h2,  #range > .container > p{
   text-align: center;
 }
@@ -264,7 +268,6 @@ body {
 .range-item {
     background-color: #F6ECE8;
     max-height: 630px;
-    flex: 1 1 300px;
 }
 
 .range-item:last-child {
@@ -272,7 +275,7 @@ body {
 }
 
 .range-item img {
-    /* max-width: 500px; */
+    width: 100%;
 }
 
 .range-item h3 {
@@ -429,7 +432,7 @@ body {
 
 .news-form > input[type="text"] {
     border: none;
-    width: 700px;
+    max-width: 700px;
     background: none;
     border-bottom: 1px solid rgba(150, 118, 117, 0.5);
     padding-bottom: 4px;
@@ -479,6 +482,7 @@ body {
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: #fff;
 }
 
@@ -502,22 +506,26 @@ body {
     line-height: 30px;
 }
 
-.footer-info > p:last-child {
+.footer-wrapper >  p {
     font-family:'Poppins', serif;
     font-size: 16px;
     color: #FFFFFF;
     opacity: 0.5;
     margin-top: 50px;
+    flex: 1 1 100%;
 }
 
 .footer-menu {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    flex-wrap: wrap;
+    width: 400px;
+    /* border: 1px solid red; */
 }
 
 .footer-menu-left {
     position: relative;
+    flex: 1 1 250px;
 }
 
 .footer-menu-left > h5,  .footer-menu-right > h5, .footer-menu-left ul li a, .footer-menu-right ul li a {

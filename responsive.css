@@ -6,7 +6,6 @@
 
     #slider {
         position: relative;
-        border: 1px solid red;
     }
 
     #slider > .container {
@@ -31,7 +30,6 @@
 
     .slider-img {
         position: static;
-        border: 1px solid red;
         flex: 1 1 600px;
         margin-top: 80px;
     }
@@ -115,6 +113,10 @@
 }
 
 @media only screen and (min-width: 350px) and (max-width: 756px) {
+    .title {
+        font-size: 35px;
+        text-align: center;
+    }
 
     .menu {
         height: auto;
@@ -136,6 +138,10 @@
 
     .slider-text {
         margin-bottom: 50px;
+    }
+
+    .slider-text h2 {
+        margin-top: 85px;
     }
 
     .brand-wrapper {
@@ -185,9 +191,40 @@
         height: 300px;
     }
 
+    .quiote-circle > h3 {
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .quiote-circle::before, .quiote-circle::after {
+        content: none;
+    }
+
+    .news-form > input[type="text"] {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
     .brand-item > p {
         padding-left: 0;
         text-align: center;
+    }
+
+    #footer {
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .footer-menu {
+        justify-content: center;
+    }
+
+    .footer-menu-right, .footer-menu-left {
+        margin-top: 35px;
+    }
+
+    .footer-menu > p {
+        margin-top: 20px;
     }
 
 }
