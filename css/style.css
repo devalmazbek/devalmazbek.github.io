@@ -28,6 +28,7 @@ body {
 .logo-letters {
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
     background-image: linear-gradient(173.48deg, #2BE9A3 7.91%, #07CDBF 56.39%, #00C7C5 66.53%, #09C7CA 74.43%, #21C9D8 89.08%, #48CBEE 107.12%, #66CCFF 119.52%); 
     margin-right: 25px;
 }
@@ -491,7 +492,6 @@ body {
     display: flex;
     flex: 1 1 450px;
     list-style-type: none;
-    border: 1px solid red;
     margin-left: 0;
     padding: 0;
 }
