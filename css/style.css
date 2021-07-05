@@ -310,7 +310,7 @@ body {
 
 .member-icon {
     position: absolute;
-    left: 83%;
+    left: 77%;
     top: 0;
 }
 
@@ -318,14 +318,14 @@ body {
     content: url(/img/Rectangle6.png);
     position: absolute;
     top: 80px;
-    left: -26px;
+    left: -35px;
     z-index: -1;
 }
 
 .member-icon::after {
     content: url(/img/Rectangle7.png);
     position: absolute;
-    right: -23%;
+    right: -40%;
     top: 20%;
     z-index: -1;
 }
